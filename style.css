@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --color-blue: hsl(223, 87%, 63%);
+    --color-pale_blue: hsl(223, 100%, 88%);
+    --color-light_red: hsl(354, 100%, 66%);
+    --color-gray: hsl(0, 0%, 59%);
+    --color-very_dark_blue: hsl(209, 33%, 12%);
+    --font-libre_franklin: 'Libre Franklin', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-libre_franklin);
+    font-size: 20px;
+}
+
+.logo {
+    display: block;
+    margin: 5rem auto 2rem auto;
+}
+
+.heading-section h1 {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: var(--color-gray);
+}
+
+span {
+    font-weight: 700;
+    color: var(--color-very_dark_blue);
+}
+
+.heading-section p {
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 1rem 0 1.25rem 0;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 75%;
+    padding: 0.7rem 4rem 0.7rem 1.5rem;
+    border-radius: 25px;
+    border: 1px solid var(--color-pale_blue);
+    font-family: var(--font-libre_franklin);
+    color: var(--color-very_dark_blue);
+}
+
+input::placeholder {
+    color: var(--color-gray);
+}
+
+input:focus {
+    outline: none;
+}
+
+.error {
+    color: var(--color-light_red);
+    font-size: 0.6rem;
+    font-style: italic;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 75%;
+    background-color: var(--color-blue);
+    color: #FFF;
+    font-family: var(--font-libre_franklin);
+    border: none;
+    padding: 0.7rem;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 2px 5px 10px -1px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 2px 5px 10px -1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 5px 10px -1px rgba(0,0,0,0.25);
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.dashboard {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.icons-section {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands {
+    color: var(--color-blue);
+    cursor: pointer;
+    border: 1px solid var(--color-pale_blue);
+    border-radius: 50%;
+    padding: 0.4em 0.5em;
+    margin-inline: 0.25rem;
+}
+
+.fa-brands:hover {
+    color: #fff;
+    background-color: var(--color-blue);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.6rem;
+    margin: 1.75rem 0;
+    color: var(--color-gray);
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.fa-facebook-f {padding: 0.4em 0.65em;}
+.attribution { font-size: 13px; text-align: center; color: var(--color-gray); margin-bottom: 0.25rem;}
+.attribution a { color: var(--color-very_dark_blue); text-decoration: none; }
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .input-section {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .dashboard {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-section {
+        flex-direction: row;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    button {
+        margin: 0 0 0 0.75rem;
+        width: 35%;
+    }
+
+    .dashboard {
+        width: 50%;
+    }
+
+    .error {
+        position: absolute;
+        top: 315px;
+        left: 290px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .input-section {
+        width: 40%;
+    }
+
+    input {
+        padding: 0.9rem 2rem;
+        border-radius: 50px;
+    }
+
+    button {
+        padding: 0.9rem;
+        border-radius: 50px;
+    }
+
+    .error {
+        left: 470px;
+        top: 320px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .heading-section h1 {
+        font-size: 2.25rem;
+    }
+
+    .heading-section p {
+        font-size: 1rem;
+    }
+
+    .input-section {
+        width: 35%;
+        margin-top: 2rem;
+    }
+
+    input {
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 50px;
+    }
+
+    .dashboard {
+        width: 35%;
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
+
+    .error {
+        position: absolute;
+        top: 370px;
+        left: 815px;
+        font-size: 14px;
+    }
+
+    .attribution {font-size: 15px;}
+}
