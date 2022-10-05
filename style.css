@@ -205,11 +205,11 @@ button:hover {
 
 @media (min-width: 1920px) {
     .heading-section h1 {
-        font-size: 2.25rem;
+        font-size: 3rem;
     }
 
     .heading-section p {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .input-section {
